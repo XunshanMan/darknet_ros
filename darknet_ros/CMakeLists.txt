@@ -231,7 +231,7 @@ if(CATKIN_ENABLE_TESTING)
   message(STATUS "Checking and downloading yolov2.weights if needed ...")
   if (NOT EXISTS "${FILE}")
     message(STATUS "... file does not exist. Downloading now ...")
-    execute_process(COMMAND wget http://pjreddie.com/media/files/yolov2.weights -P ${PATH})
+    #execute_process(COMMAND wget http://pjreddie.com/media/files/yolov2.weights -P ${PATH})
   endif()
 
   find_package(rostest REQUIRED)
